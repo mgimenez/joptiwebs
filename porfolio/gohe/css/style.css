@@ -1,0 +1,253 @@
+body{
+	margin:0 auto;
+	font-family:Arial, Helvetica, sans-serif;
+	background:#ccc;
+}
+#contenedor{
+	width:960px;
+	margin:auto;
+	background:#fff;
+}
+img{
+	border:none;
+}
+.clear{
+	clear:both;
+}
+div.head{
+	border-bottom:1px solid #CCC;
+	height:100px;
+}
+div.logo h1{
+	background:url(images/logo.jpg) no-repeat;
+	height:70px;
+	width:270px;
+	text-indent:-9999px;
+	margin-bottom:0;
+}
+div.logo{
+	float:left;	
+}
+div.nav{
+	float:right;
+	padding-top:23px;	
+}
+
+div.nav ul li {
+	float:left;
+	list-style:none;
+	margin:0 20px 0 0;
+}
+div.nav ul li a{
+		text-align:center;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:14px;
+		font-weight:bold;
+		width:81px;
+		display:block;
+		text-decoration:none;
+		color:#F9A94B;
+}
+div.nav ul li a:hover{
+	color:#29ABE2;	
+}
+div.nav ul li img{
+	display:block;
+	margin:auto;
+/*	margin:0 0 5px 26px;*/
+}
+#slider{
+	margin:0 0 15px;
+}
+	#slider ul, #slider li,
+	#slider2 ul, #slider2 li{
+		margin:0;
+		padding:0;
+		list-style:none;
+		}
+	#slider2{margin-top:1em;}
+	#slider li, #slider2 li{ 
+		/* 
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/ 
+		width:960px;
+		height:300px;
+		overflow:hidden; 
+		}
+		
+div.cuerpo{
+	padding:0 15px 15px 15px;
+}
+div.destx3{
+	width:252px;
+	float:left;
+	border-right:2px solid #fff;
+	background:#FDDDB7;
+	color:#4d4d4d;
+	padding:10px 28px;
+	height:137px;
+	
+}
+div.destx3.middle{
+	background:#ccc;
+	color:#fff;
+}	
+
+div.destx3 img{
+	float:left;
+	margin:0 5px;	
+}
+div.destx3 h2{
+	margin:0;
+	padding:10px 0;
+	font-size:19px;
+	font-weight:normal;
+	font-family:Tahoma, Geneva, sans-serif;
+	border-bottom:1px dotted #999;
+}
+div.destx3 p{
+	margin:0;
+	font-size:12px;	
+}
+div.destx3 strong{
+	color:#29ABE2;
+	font-size:14px;
+	margin:0;
+	display:block;
+	padding:5px 0;
+}
+div.tipsx2{
+	padding:20px 0;
+}
+div.destx2 {
+	width:449px;
+	float:left;
+}
+div.destx2.first{
+	border-right:1px solid #999;	
+	padding-right:15px;
+}
+div.destx2.last{
+	padding-left:15px;
+}
+div.destx2 h2{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:22px;
+	font-weight:normal;
+	color:#F7931E;
+	margin:0 0 7px 0;
+}
+
+div.destx2 p{
+	font-size:12px;
+	color:#4d4d4d;
+	text-align:justify;
+}
+div.destx2 a{
+	float:right;
+	font-size:12px;
+	color:#FFF;
+	background:#4d4d4d;
+	padding:2px 3px;
+	text-decoration:none;
+	
+}
+div.destx2 a:hover{
+	color:#4d4d4d;
+	background:#FFF;	
+}
+/* NOSOTROS */
+.margen-left{
+	margin-left:20px;
+}
+div.cuerpo h3{
+	color:#F9A94B;
+}
+div.cuerpo  p,
+div.cuerpo div.mision ul li{
+	font-size:12px;
+}
+div.nosotros p strong{
+	color:#29ABE2;	
+}
+
+div.servicios{
+	padding-top:10px;	
+}
+div.servicios div.list-serv{
+	width:620px;
+	float:left;
+	margin:0 20px;
+}
+div.servicios div.list-serv h4{
+	font-size:12px;
+	color:#FFF;
+	background:#29ABE2;
+	padding:5px;
+	display:inline;
+	margin:10px 0;
+}
+
+div.servicios div.right-serv{
+	background:#ccc;
+	float:right;
+	padding:20px 10px;
+	width:240px;
+}
+div.servicios div.right-serv h4{
+	color:#29ABE2;
+	font-size:18px;
+	margin:0;
+
+}
+div.servicios div.right-serv ul{
+	margin:10px 0 0 0;
+	padding:0 0 0 25px;	
+}
+div.servicios div.right-serv ul li{
+	color:#FFF;
+	font-size:12px;	
+}
+div.servicios div.right-serv div.qhacemos ul li{
+	list-style:square;	
+}
+div.servicios div.right-serv div.nclientes{
+	padding-top:15px;	
+}
+div.servicios div.right-serv div.nclientes ul li{
+	list-style:none;	
+}
+div.cuerpo div.mision h5{
+	margin-bottom:10px;
+	color:#29ABE2;
+}
+div.cuerpo div.mision p,
+div.cuerpo div.mision ul{
+	margin:0;
+	padding:0;
+}
+div.cuerpo div.mision ul{
+	padding-left:13px;
+}
+/* CONTACTO */ 
+div.cuerpo div.contactForm{
+	float:left;
+	width:500px;
+}
+div.cuerpo div.datosContacto{
+	float:left;
+}
+
+/* FOOTER */
+
+#footer  {
+/*	height:50px;*/
+	border-top:1px solid #CCCCCC;
+}
+#footer p{
+	padding:10px 0;
+	margin:0;
+	font-size:14px;
+	text-align:center;
+}

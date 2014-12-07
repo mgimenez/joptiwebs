@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.ez-bg-resize.js"  charset="utf-8"></script>
+
+
+<link rel="stylesheet" href="css/backg-resize.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="css/accordion.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
+
+<script>
+	$(document).ready(function() {
+		$("body").ezBgResize({
+			img     : "image/bg1.jpg", // Relative path example.  You could also use an absolute url (http://...).
+			opacity : 1, // Opacity. 1 = 100%.  This is optional.
+			center  : true // Boolean (true or false). This is optional. Default is true.
+		});
+	});
+</script>
+<script>
+$(function(){
+	$('.fadein img:gt(0)').hide();
+	setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 10000);
+});
+</script>
+
+<title>Stevens Restaurant</title>
+</head>
+
+<body>
+<div id="contenedor">
+	<div class="sidebar-left">
+        <div class="logo">
+        	<a href="index.html"><img src="image/logo.png" alt="logo"/></a>
+        </div>
+        <div class="accordian">
+            <ul>
+                <li>NOSOTROS</li>
+                <li style="display: none; ">Hace 24 años que somos parte del mercado gastronómico argentino. Durante este tiempo, siempre nos distinguimos por nuestro primerísimo nivel de cocina, exclusivo sistema de cocción, amplia infraestructura y una marcada responsabilidad social empresaria. En este nuevo período que comienza, donde es cada vez mayor el crecimiento local como internacional, queremos ofrecerle al más exigente comensal, tanto argentino como extranjero.</li>
+                <li>HORARIOS</li>
+                <li>
+                <b>DIA</b>
+                <p>Lunes a Jueves</p>
+                <p>11.30AM a 15.30PM</p>
+                <p>Viernes Sabados Domingos y Visperas de Feriados</p>
+                <p>11.30AM a 16.30PM</p>
+                <b>NOCHE</b>
+                <p>Lunes a Jueves</p>
+                <p>20.30PM a 00.30AM</p>
+                <p>Viernes Sabados Domingos y Visperas de Feriados</p>
+                <p>20.30PM a 1.30AM</p>
+                </li>
+                <li>CONTACTO</li>
+                <li>
+                <p>STEVENS Restaurant</p>
+                <p>Telefono (+54)11 4558.5544</p>
+                <p>contacto@stevens.com.ar</p>
+                <p><label>Nombre: </label><input name="nombre" type="text" id="nombre" size="30" /></p>
+                <p><label>E-mail: </label><input name="mail" type="text" id="mail" size="30" /></p>
+                <p><label>Mensaje</label></p>
+                <p><textarea name="mensaje" cols="30" rows="3" id="mensaje"></textarea></label></p>
+                <p style="float:right;"><input type="submit" name="Submit" value="Enviar" /></p>
+                </li>
+                <li>UBICACION</li>
+                <li>
+                <img src="image/mapa.png" alt="mapa"/>
+                <p>Alicia Moreau de Justo 1545 - Puerto Madero</p>
+                <p>Ciudad Autonoma de Bs. As. - Argentina</p>
+                </li>
+            </ul>
+        </div>
+	</div>
+    <div class="nav">
+    	<ul>
+        <li><a href="">MENUS</a></li>
+        <li class="fb"><a href=""><img src="image/facebook_logo.png" /></a></li>
+        <li class="tw"><a href=""><img src="image/twitter_logo.png" /></a></li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript" src="js/accordion.js"  charset="utf-8"></script>
+</body>
+</html>

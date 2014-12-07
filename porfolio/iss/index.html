@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type"/>
+
+<title>ISLAND SKATE & SURF</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+	// Muestra y oculta los menús
+	$('ul li:has(ul)').hover(
+		function(e)
+		{
+			$(this).find('ul').slideDown();
+		},
+		function(e)
+		{
+			$(this).find('ul').slideUp();
+		}
+	);
+});
+
+function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+    
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 5000 );
+});
+
+</script>
+
+</head>
+
+<body>
+
+<!-- this will work with any number of images -->
+<!-- set the active class on whichever image you want to show up as the default 
+(otherwise this will be the last image) -->
+<div id="logo">
+	<h1>ISLAND SKATE & SURF</h1>
+</div>
+<div id="nav">
+	<ul>
+		<li>
+			<a href="">HOME</a>
+		</li>
+		<li>
+			<a href="" class="novedades">NOVEDADES</a>
+		</li>
+		<li>
+			<a href="">TIENDA</a>
+			<ul style="display: none;">
+				<li><a href="" class="historia">HISTORIA</a></li>
+				<li><a href="" class="locales">LOCALES</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="">INDUMENTARIA</a>
+			<ul style="display: none;">
+				<li><a href="" class="hombre">HOMBRE</a></li>
+				<li><a href="" class="mujer">MUJER</a></li>
+				<li><a href="" class="accesorios">ACCESORIOS</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="">MULTIMEDIA</a>
+			<ul style="display: none;">
+				<li><a href="">AUDIOS</a></li>
+				<li><a href="">VIDEOS</a></li>
+			</ul>
+		</li>
+		<li><a href="">CONTACTO</a></li>
+	</ul>
+</div>
+<div id="pup-novedades" class="popup">
+	<h3>Novedades!</h3>
+	<p>Novedades</p>
+	<p>Novedades</p>
+	<p>Novedades</p>
+	<p>Novedades</p>
+	<p>Novedades</p>
+</div>
+<div id="pup-historia" class="popup">
+	<h3>Historia!</h3>
+	<p>Historia</p>
+	<p>Historia</p>
+	<p>Historia</p>
+	<p>Historia</p>
+	<p>Historia</p>
+</div>
+<div id="pup-locales" class="popup">
+	<h3>Locales!</h3>
+	<p>Locales</p>
+	<p>Locales</p>
+	<p>Locales</p>
+	<p>Locales</p>
+	<p>Locales</p>
+</div>
+<div id="pup-hombre" class="popup">
+	<div class="title">
+		<h3>indumentaria</h3>
+		<h2>HOMBRE</h2>
+	</div>
+	<div class="left">
+		<div class="menu_prendas">
+		<p>remeras</p>
+		<p>buzos</p>
+		<p>camperas</p>
+		<p>calzados</p>
+		</div>
+		<div class="thumn">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="fullimg">
+		
+	</div>
+</div>
+<div id="pup-mujer" class="popup">
+	<h3>Novedades!</h3>
+	<p>Novedades</p>
+	<p>Novedades</p>
+	<p>Novedades</p>
+	<p>Novedades</p>
+	<p>Novedades</p>
+</div>
+<div id="pup-accesorios" class="popup">
+	<h3>Novedades!</h3>
+	<p>Novedades</p>
+	<p>Novedades</p>
+	<p>Novedades</p>
+	<p>Novedades</p>
+	<p>Novedades</p>
+</div>
+<div style='display:none'>
+	<img src='images/x.png' alt='' />
+</div>
+<div id="slideshow">
+    <img src="images/image1.jpg" alt="Slideshow Image 1" class="active" />
+    <img src="images/image2.jpg" alt="Slideshow Image 2" />
+    <img src="images/image3.jpg" alt="Slideshow Image 3" />
+    <img src="images/image4.jpg" alt="Slideshow Image 4" />
+</div>
+<script type='text/javascript' src='js/jquery.simplemodal.js'></script>
+<script type='text/javascript' src='js/basic.js'></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+@import "reset.css";
+
+body {
+	height: 1000px;
+	background: yellow;
+	font-family:verdana;
+}
+
+
+#container {
+	width:964px;
+	margin: auto;
+	background: #cccccc;
+}
+
+
+#header {
+	width:964px;
+	height:286px;
+	margin:0;
+	background: url(http://www.estudiomola.com.ar/clientes/ale/header.jpg) center left no-repeat;
+	margin: auto;
+	
+}
+
+#botonera ol li{
+	display:block;
+	float:left;
+	margin-right:50px;
+	font-weight:bold;
+	color:#fff;
+	font-size:14px;
+}
+#botonera ol {
+	position:absolute;
+	left:450px;
+	top:260px;
+}
+
+
+#izq {
+	width:185px;
+	
+	background:#fff;
+	float:left;
+}
+
+#izq h4, #der h4{
+	display: block;
+	background:#707173;
+	padding: 9px 5px 5px 15px;
+	height: 20px;
+	font-weight: bold;
+	color: #fff;
+
+}
+#newsletter {
+	
+}
+#newsletter p {
+	font-size:12px;
+	margin-left:15px;
+	margin-top:13px;
+	font-weight: bold;
+	display:inline;
+}
+#newsletter input  {
+	width:100px;
+	margin-top:13px;
+	border:solid 1px #000;
+}
+#newsletter span input{
+	width:75px;
+	height:22px;
+	margin-top:13px;
+	border:none;
+	background:#000;
+	font-weight: bold;
+	color: #fff;
+	font-size:11px;
+	margin:13px 0px 10px 85px;
+	font-family:verdana;
+}
+
+#profiles {
+	height:150px;
+	background:#fff;
+}
+
+#profiles span{
+	float:left;
+	margin:15px -5px 0px 0px;
+}
+#profiles span ul{
+	margin-left:15px;
+	font-size:11px;
+	line-height:20px;
+	list-style-type:none;
+
+}
+#profiles span ul li{
+	padding-left: 20px;
+	background: url(http://www.estudiomola.com.ar/clientes/ale/checkbox.jpg) center left no-repeat;
+
+}
+
+#video {
+	height: 100%;
+}
+
+#video ol{
+	margin:15px 0px 0px 15px;
+}
+#video ol li a{
+	text-decoration:none;
+	font-size:11px;
+	color:#000;
+}
+
+#video ol li a p{
+	font-style:italic;
+	margin-left:30px;
+}
+#video ol li a img{
+	float:left;
+	padding-right:15px;
+}
+
+#video ol li{
+	border-bottom:solid 1px #000;
+	margin-bottom:15px;
+	height:55px;
+
+}
+#video .titulo{
+	font-weight:bold;
+	font-style:normal;
+	margin-bottom:5px;
+}
+
+
+#cuerpo {
+	width:200px;
+	height: 200px;
+	background:green;
+	float:left;
+}
+#der {
+	width:300px;
+	background:#fff;
+	float:right;
+}
+#pie {
+	height: 54px;
+	width:964px;
+	background:black;
+	clear:both;
+}
+
+#feed {
+	height: 100%;
+	padding-top:10px;
+	
+}
+
+#feed ol{
+	margin-left: 10px;
+
+	
+}
+
+#feed ol li {
+	display: block;
+	float: left;
+	margin: 10px 15px 0px 15px;
+	
+	
+}

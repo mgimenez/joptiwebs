@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+body,html{
+	height:100%;	
+}
+img{
+	border:none;	
+}
+#contenedor{
+	height:100%;	
+}
+.sidebar-left{
+	width:400px;
+	background:url(image/bg-sidebarLeft.png) repeat-y;
+	height:100%;
+	float:left;
+}
+.logo{
+	background:url(image/logo.png) no-repeat;
+	height:240px;
+	width:400px;
+		border-bottom:1px dotted #FFF;
+}
+.accordian {
+z-index:2;
+}
+div.nav{
+	height:240px;
+	border-bottom:1px dotted #FFF;
+}
+div.nav ul{
+	float:right;
+	margin-right:100px;
+	padding-top:200px;	
+}
+div.nav ul li{
+	float:left;
+	margin:20px 10px;
+	list-style:none;
+	padding:0 5px;
+}
+div.nav ul li a {
+	color:#FFF;
+	font-weight:bold;
+}
+div.nav ul li.fb a:hover{
+	color:#3B5998;	
+}
+div.nav ul li.tw a:hover{
+	color:#0098C6;	
+}
+div.nav ul li a:hover{
+	text-decoration:none;
+	color:#999;	
+}
+/* background slide */
+.fadein { position:relative; height:332px; width:500px; }
+.fadein img { position:absolute; left:0; top:0; }
+/**/
