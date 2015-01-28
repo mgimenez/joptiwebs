@@ -45,12 +45,13 @@ header {
 }
 
 .content-data img {
-    float: left;
+    display: inline-block;
     margin-right: 20px;
 }
 
 .content-me {
-    float: left;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .content-me h1{
