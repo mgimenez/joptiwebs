@@ -2,6 +2,8 @@ body {
     max-width: 950px;
     margin:0 auto;
     padding: 40px 0;
+    font-family: Georgia;
+    background: url('images/crossword.png');
 }
 
 .container {
@@ -13,6 +15,29 @@ body {
 
 header {
     overflow: hidden;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.link-doc {
+    position: absolute;
+    bottom: 5px;
+}
+
+.ico-social {
+    background: url('images/social-icons.gif');
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    text-indent: -9000px;
+}
+
+.ico-twitter {
+    background-position: 0 0;
+}
+
+.ico-linkedin {
+    background-position: 24px 0;
 }
 
 .content-data {
@@ -37,17 +62,62 @@ header {
 }
 
 header, article {
-    padding-bottom: 30px;
     margin-bottom: 30px;
     border-bottom: solid 1px #DDD;
+}
 
+article {
+    padding-bottom: 30px;
 }
 
 article > h2 {
     position: absolute;
     width: 150px;
+    font-style: italic;
 }
 
 article .content-right{
     margin-left: 200px;
+}
+
+.skills {
+    overflow: hidden;
+}
+
+.skills ul {
+    float: left;
+    width: 33%;
+}
+
+.skills li {
+    border-bottom: solid 1px #ddd;
+    padding-right: 40px;
+}
+
+.box-content {
+    border-bottom: solid 1px #ddd;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.box-content:last-child {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.job-date {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.box-content ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
 }
