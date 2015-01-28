@@ -1,16 +1,3 @@
-/*
----------------------------------------------------------------------------------
-	STRIPPED DOWN RESUME TEMPLATE
-    html resume
-
-    v0.9: 5/28/09
-
-    design and code by: thingsthatarebrown.com 
-                        (matt brown)
----------------------------------------------------------------------------------
-*/
-
-
 .msg { padding: 10px; background: #222; position: relative; }
 .msg h1 { color: #fff;  }
 .msg a { margin-left: 20px; background: #408814; color: white; padding: 4px 8px; text-decoration: none; }
@@ -39,7 +26,7 @@ p { font-size: 100%; line-height: 18px; padding-right: 3em; }
 a { color: #990003 }
 a:hover { text-decoration: none; }
 strong { font-weight: bold; }
-li { line-height: 24px; border-bottom: 1px solid #ccc; }
+.talent li { line-height: 24px; border-bottom: 1px solid #ccc; }
 p.enlarge { font-size: 144%; padding-right: 6.5em; line-height: 24px; }
 p.enlarge span { color: #000 }
 .contact-info { margin-top: 7px; }
@@ -54,7 +41,7 @@ a#pdf:hover { background: #222; }
 
 .job { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
 .job h4 { position: absolute; top: 0.35em; right: 0 }
-.job p { margin: 0.75em 0 3em 0; }
+.job p {  }
 
 .last { border: none; }
 .skills-list {  }
