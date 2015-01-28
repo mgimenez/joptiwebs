@@ -106,3 +106,7 @@ h5 {
 h6 {
     font-size: 14px;
 }
+
+a {
+    text-decoration: none;
+}
