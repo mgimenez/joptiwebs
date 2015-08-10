@@ -19,7 +19,7 @@ body {
 
 .left-panel {
 	width: 320px;
-	background: #FCAE60;
+	background: #24B2AA;
 	text-align: right;
 	height: 100%;
 	padding-right: 50px;
@@ -65,6 +65,7 @@ main {
 	right: 0;
 	overflow: scroll;
 	height: 100%;
+	width: 100%;
 }
 
 section {
@@ -75,13 +76,16 @@ section {
 .home {
 	
 	color: #fff;
-	padding-top: 260px;
-	height: 600px;
-	box-sizing: border-box;
 	position: relative;
-	background: url(../images/bkg-home.jpg);
-	background-repeat: no-repeat;
-    width: 100%;
+	box-sizing: border-box;
+	padding-top: 260px;
+	/*background: url(../images/bkg-home.jpg);*/
+	background: url(http://subtlepatterns.com/patterns/purty_wood.png);
+
+	/*background-repeat: no-repeat;*/
+	/*background-size: cover;*/
+    height: 100%;
+    max-height: 600px;
 
 	h2 {
 		font-size: 45px;
@@ -128,12 +132,11 @@ section {
 .skills {
 	color: #fff;
 	padding-top: 50px;
-	height: 764px;
-	box-sizing: border-box;
+	/*height: 764px;*/
 	position: relative;
 	background: url(../images/bkg-skills.jpg);
 	background-repeat: no-repeat;
-    width: 100%;
+	background-size: cover;
 	
 	ul {
 	    margin-right: -25px;
@@ -148,8 +151,11 @@ section {
     	text-align: center;
     	vertical-align: middle;
     	cursor: default;
-    	width: 15%;
+    	width: 14%;
+    	box-sizing:border-box;
     	position: relative;
+		min-width: 100px;
+		padding: 1%;
 		
 		&:hover {
     		background: rgba(256,256,256,0.5);
@@ -192,7 +198,7 @@ section {
 }
 
 .contact {
-	background: #5FD3AF;
+	background: #D9B744;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	min-height: 350px;
@@ -300,4 +306,24 @@ footer {
 
 .icon-icon-tw:hover {
 	color: #63AEEB;
+}
+
+
+@media screen and (max-width: 960px) {
+
+	.left-panel {
+		display: none;
+	}
+
+	main {
+		position: static;
+	}
+
+	.home {
+		padding-top: 10%;
+	}
+
+	.skills li {
+
+	}
 }

@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../usr/local/rvm/gems/jruby-1.7.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../usr/local/rvm/gems/jruby-1.7.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../usr/local/rvm/gems/jruby-1.7.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../usr/local/rvm/gems/jruby-1.7.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../usr/local/rvm/gems/jruby-1.7.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../usr/local/rvm/gems/jruby-1.7.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../usr/local/rvm/gems/jruby-1.7.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../usr/local/rvm/gems/jruby-1.7.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../usr/local/rvm/gems/jruby-1.7.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -87,7 +87,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 0;
-  color: #bbb;
+  color: #fff;
 }
 
 /* line 28, ../sass/fonts.scss */
@@ -142,7 +142,7 @@ body {
 /* line 20, ../sass/styles.scss */
 .left-panel {
   width: 320px;
-  background: #FCAE60;
+  background: #24B2AA;
   text-align: right;
   height: 100%;
   padding-right: 50px;
@@ -190,76 +190,78 @@ main {
   right: 0;
   overflow: scroll;
   height: 100%;
+  width: 100%;
 }
 
-/* line 70, ../sass/styles.scss */
+/* line 71, ../sass/styles.scss */
 section {
   padding: 0 50px;
   /*max-width: 800px;*/
 }
 
-/* line 75, ../sass/styles.scss */
+/* line 76, ../sass/styles.scss */
 .home {
   color: #fff;
-  padding-top: 260px;
-  height: 600px;
-  box-sizing: border-box;
   position: relative;
-  background: url(../images/bkg-home.jpg);
-  background-repeat: no-repeat;
-  width: 100%;
+  box-sizing: border-box;
+  padding-top: 260px;
+  /*background: url(../images/bkg-home.jpg);*/
+  background: url(http://subtlepatterns.com/patterns/purty_wood.png);
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
+  height: 100%;
+  max-height: 600px;
 }
-/* line 86, ../sass/styles.scss */
+/* line 90, ../sass/styles.scss */
 .home h2 {
   font-size: 45px;
 }
-/* line 90, ../sass/styles.scss */
+/* line 94, ../sass/styles.scss */
 .home h5 {
   margin: 10px 0;
   font-size: 20px;
   font-weight: 400;
 }
-/* line 96, ../sass/styles.scss */
+/* line 100, ../sass/styles.scss */
 .home a + a {
   margin-left: 15px;
 }
 
-/* line 102, ../sass/styles.scss */
+/* line 106, ../sass/styles.scss */
 .resume {
   margin-top: 50px;
   margin-bottom: 50px;
   line-height: 1.6;
 }
-/* line 107, ../sass/styles.scss */
+/* line 111, ../sass/styles.scss */
 .resume .title-section {
   color: #000;
 }
-/* line 111, ../sass/styles.scss */
+/* line 115, ../sass/styles.scss */
 .resume h3 {
   font-size: 27px;
   color: #8C6115;
   margin-bottom: 45px;
 }
-/* line 118, ../sass/styles.scss */
+/* line 122, ../sass/styles.scss */
 .resume p {
   font-family: Tahoma;
   color: #999;
 }
-/* line 123, ../sass/styles.scss */
+/* line 127, ../sass/styles.scss */
 .resume p + p {
   margin-top: 15px;
 }
 
-/* line 128, ../sass/styles.scss */
+/* line 132, ../sass/styles.scss */
 .skills {
   color: #fff;
   padding-top: 50px;
-  height: 764px;
-  box-sizing: border-box;
+  /*height: 764px;*/
   position: relative;
   background: url(../images/bkg-skills.jpg);
   background-repeat: no-repeat;
-  width: 100%;
+  background-size: cover;
     /*.big {
 		height: 130px;
     	width: 130px;
@@ -275,11 +277,11 @@ section {
     	width: 70px;
    }*/
 }
-/* line 138, ../sass/styles.scss */
+/* line 141, ../sass/styles.scss */
 .skills ul {
   margin-right: -25px;
 }
-/* line 142, ../sass/styles.scss */
+/* line 145, ../sass/styles.scss */
 .skills li {
   background: rgba(102, 102, 102, 0.8);
   border: solid 2px #fff;
@@ -289,23 +291,26 @@ section {
   text-align: center;
   vertical-align: middle;
   cursor: default;
-  width: 15%;
+  width: 14%;
+  box-sizing: border-box;
   position: relative;
+  min-width: 100px;
+  padding: 1%;
 }
-/* line 154, ../sass/styles.scss */
+/* line 160, ../sass/styles.scss */
 .skills li:hover {
   background: rgba(255, 255, 255, 0.5);
   border-color: #666666;
   font-weight: bold;
   color: rgba(102, 102, 102, 0.8);
 }
-/* line 161, ../sass/styles.scss */
+/* line 167, ../sass/styles.scss */
 .skills li:before {
   content: '';
   display: block;
   padding: 50% 0;
 }
-/* line 167, ../sass/styles.scss */
+/* line 173, ../sass/styles.scss */
 .skills li span {
   position: absolute;
   top: 50%;
@@ -315,22 +320,22 @@ section {
   display: block;
 }
 
-/* line 194, ../sass/styles.scss */
+/* line 200, ../sass/styles.scss */
 .contact {
-  background: #5FD3AF;
+  background: #D9B744;
   padding-top: 50px;
   padding-bottom: 50px;
   min-height: 350px;
 }
-/* line 200, ../sass/styles.scss */
+/* line 206, ../sass/styles.scss */
 .contact h2 {
   color: #fff;
 }
-/* line 204, ../sass/styles.scss */
+/* line 210, ../sass/styles.scss */
 .contact ul {
   position: relative;
 }
-/* line 207, ../sass/styles.scss */
+/* line 213, ../sass/styles.scss */
 .contact li {
   border: solid 1px #fff;
   border-radius: 50%;
@@ -343,36 +348,36 @@ section {
   width: 10%;
   position: absolute;
 }
-/* line 219, ../sass/styles.scss */
+/* line 225, ../sass/styles.scss */
 .contact li:hover {
   /*background: rgba(256,256,256,0.5);*/
   /*border-color: rgba(102,102,102,1);*/
   /*font-weight: bold;*/
   /*color: rgba(102,102,102,0.8);*/
 }
-/* line 226, ../sass/styles.scss */
+/* line 232, ../sass/styles.scss */
 .contact li:first-child p + p {
   text-indent: -15px;
 }
-/* line 230, ../sass/styles.scss */
+/* line 236, ../sass/styles.scss */
 .contact li:nth-child(2) {
   left: 40%;
 }
-/* line 234, ../sass/styles.scss */
+/* line 240, ../sass/styles.scss */
 .contact li:nth-child(3) {
   right: 50px;
 }
-/* line 236, ../sass/styles.scss */
+/* line 242, ../sass/styles.scss */
 .contact li:nth-child(3) p + p {
   text-indent: -30px;
 }
-/* line 241, ../sass/styles.scss */
+/* line 247, ../sass/styles.scss */
 .contact li:after {
   content: '';
   display: block;
   padding: 50% 0;
 }
-/* line 247, ../sass/styles.scss */
+/* line 253, ../sass/styles.scss */
 .contact li:before {
   position: absolute;
   top: 50%;
@@ -381,7 +386,7 @@ section {
   transform: translateY(-50%);
   color: #fff;
 }
-/* line 257, ../sass/styles.scss */
+/* line 263, ../sass/styles.scss */
 .contact p {
   position: absolute;
   font-size: 22px;
@@ -391,29 +396,29 @@ section {
   color: #fff;
   white-space: nowrap;
 }
-/* line 267, ../sass/styles.scss */
+/* line 273, ../sass/styles.scss */
 .contact p + p {
   bottom: -70px;
   font-size: 14px;
 }
 
-/* line 273, ../sass/styles.scss */
+/* line 279, ../sass/styles.scss */
 footer {
   padding: 50px;
 }
-/* line 276, ../sass/styles.scss */
+/* line 282, ../sass/styles.scss */
 footer p {
   font-size: 21px;
 }
 
-/* line 281, ../sass/styles.scss */
+/* line 287, ../sass/styles.scss */
 .title-section {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
   letter-spacing: 0.12em;
 }
-/* line 287, ../sass/styles.scss */
+/* line 293, ../sass/styles.scss */
 .title-section:after {
   content: '';
   border-bottom: solid 5px #E6E6E6;
@@ -422,12 +427,29 @@ footer p {
   margin-top: 10px;
 }
 
-/* line 297, ../sass/styles.scss */
+/* line 303, ../sass/styles.scss */
 .icon-icon-li:hover {
   color: #297CB2;
 }
 
-/* line 301, ../sass/styles.scss */
+/* line 307, ../sass/styles.scss */
 .icon-icon-tw:hover {
   color: #63AEEB;
+}
+
+@media screen and (max-width: 960px) {
+  /* line 314, ../sass/styles.scss */
+  .left-panel {
+    display: none;
+  }
+
+  /* line 318, ../sass/styles.scss */
+  main {
+    position: static;
+  }
+
+  /* line 322, ../sass/styles.scss */
+  .home {
+    padding-top: 10%;
+  }
 }

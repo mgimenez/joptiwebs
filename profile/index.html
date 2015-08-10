@@ -15,8 +15,8 @@
                 <img src="images/profile-pic.png" alt="profile pic" />
                 <h1>MATIAS<br>GIMENEZ</h1>
             </header>
-            <nav>
-                <a href="#home" class="btn">HOME</a>
+            <nav class="main-nav">
+                <a href="#home">HOME</a>
                 <a href="#resume">RESUME</a>
                 <a href="#skills">SKILLS</a>
                 <a href="#contact">CONTACT</a>
@@ -81,16 +81,24 @@
             (function(doc){
                 'use strict';
 
-                var scrollme = doc.querySelector(".btn"),
-                    main = doc.querySelector("main");
+                var mainNav = doc.querySelector(".main-nav"),
+                    main = doc.querySelector("main"),
+                    to;
                 
-                scrollme.addEventListener("click", function(e) {
-                    e.preventDefault();
+                mainNav.addEventListener("click", function(e) {
 
-                    var querySection = e.target.id,
-                        sectionElement = doc.getElementById(querySection);
-                    // sectionElement.getBoundingClientRect().top
-                      scrollTo(main, 0, 500);
+                    if (e.target.nodeName === 'A') {
+                        e.preventDefault();
+                        console.log(e.target.getAttribute('href'));
+                        var querySection = e.target.getAttribute('href'),
+                            sectionElement = doc.querySelector(querySection);
+
+                        to = sectionElement.offsetTop;
+
+                        console.log(to);
+
+                      scrollTo(main, to, 500);
+                    }
                 }, false)
 
                 function scrollTo(element, to, duration) {
@@ -100,9 +108,9 @@
 
                     setTimeout(function() {
                         element.scrollTop = element.scrollTop + perTick;
-                        if (element.scrollTop == to) return;
+                        if (element.scrollTop == to || element.offsetHeight + element.scrollTop >= element.scrollHeight) return;
                         scrollTo(element, to, duration - 10);
-                    }, 5);
+                    }, 10);
                 }
 
             })(this.document);
