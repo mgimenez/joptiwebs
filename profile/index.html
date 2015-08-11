@@ -111,7 +111,8 @@
 
                     setTimeout(function() {
                         element.scrollTop = element.scrollTop + perTick;
-                        if (element.scrollTop == to || element.offsetHeight + element.scrollTop >= element.scrollHeight) return;
+
+                        if (element.scrollTop == to || element.offsetHeight + element.scrollTop + 1 >= element.scrollHeight) return;
                         scrollTo(element, to, duration - 10);
                     }, 10);
                 }

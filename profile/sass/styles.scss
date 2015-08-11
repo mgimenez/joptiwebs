@@ -242,14 +242,18 @@ section {
 			}
 		}
 
+		&:first-child {
+			left: 50px;
+		}
+		
 		&:nth-child(2) {
 			/*position: static;*/
 			left: 50%;
     		transform: translateX(-50%);
 		}
 
-		&:nth-child(3) {
-			right: 0;
+		&:last-child {
+			right: 50px;
 			top: 0;
 			p + p {
 				position: absolute;
@@ -324,7 +328,7 @@ footer {
 	.contact li {
 		position: static;
 		margin-bottom: 30px;
-		
+
 		&:nth-child(2) {
 			transform: initial;
 		}
