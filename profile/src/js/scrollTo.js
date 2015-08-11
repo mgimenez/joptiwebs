@@ -9,7 +9,6 @@
 
         if (e.target.nodeName === 'A') {
             e.preventDefault();
-            console.log(e.target.getAttribute('href'));
             var querySection = e.target.getAttribute('href'),
                 sectionElement = doc.querySelector(querySection);
 
