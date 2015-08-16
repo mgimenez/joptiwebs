@@ -43,7 +43,6 @@
      * Sticky header on top for mobile
      */
     win.addEventListener('scroll', function(e) {
-        console.log(e.target.body.scrollTop);
         if (e.target.body.scrollTop >= 165) {
             doc.querySelector('.left-panel').classList.add('fixed');
         } else {

@@ -22,7 +22,7 @@ module.exports = function(grunt) {
             },
             js: {
                 src: ['src/js/*.js'],
-                dest: 'build/js/script.js'
+                dest: 'build/js/script.min.js'
             }
         },
 
