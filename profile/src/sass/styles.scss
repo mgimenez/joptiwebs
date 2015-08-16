@@ -104,8 +104,8 @@ section {
 }
 
 .resume {
-	margin-top: 50px;
-	margin-bottom: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	line-height: 1.6;
 	
 	.title-section {
@@ -296,15 +296,56 @@ footer {
 	color: #63AEEB;
 }
 
+.icon-icon-github:hover:before {
+	background: #000;
+}
+
+.icon-icon-profile:hover {
+	color: #666;
+}
 
 @media screen and (max-width: 960px) {
+	
+	body {
+		overflow: auto;
+	}
 
 	.left-panel {
-		display: none;
+		width: auto;
+		padding: 20px 10px;
+		position: static;
+		height: auto;
+
+		header {
+			margin: 0;
+		}
+
+		.main-nav {
+			margin-top: 20px;
+
+			a {
+				display: inline-block;
+				margin-bottom: 0;
+			}
+		}
+
+		&.fixed {
+			position: fixed;
+			z-index: 1;
+			left: 0;
+			right: 0;
+			top: -165px;
+
+			& + main {
+			    margin-top: 217px;
+			}
+		}
 	}
 
 	main {
 		position: static;
+		overflow: auto;
+		height: auto;
 	}
 
 	.home {
@@ -327,6 +368,7 @@ footer {
 	}
 }
 @media screen and (max-width: 480px) { 
+
 	.contact li {
 		position: static;
 		margin-bottom: 30px;

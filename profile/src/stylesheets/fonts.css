@@ -50,3 +50,16 @@
 .icon-icon-mail:before {
   content: "\e600";
 }
+
+/* line 47, ../sass/fonts.scss */
+.icon-icon-profile:before {
+  content: "\e923";
+}
+
+/* line 51, ../sass/fonts.scss */
+.icon-icon-github:before {
+  content: "\e602";
+  background-color: #fff;
+  color: #efb972;
+  border-radius: 5px;
+}
