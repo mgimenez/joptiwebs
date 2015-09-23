@@ -16,8 +16,6 @@
 
             to = (sectionElement.id === 'home') ? 0 : sectionElement.offsetTop - rest;
 
-
-
           scrollTo(elemToScroll, to, 500);
         }
     }, false)
@@ -42,12 +40,63 @@
     /**
      * Sticky header on top for mobile
      */
-    win.addEventListener('scroll', function(e) {
-        if (e.target.body.scrollTop >= 165) {
+    win.addEventListener('scroll', function() {
+        if (doc.body.scrollTop >= 165) {
             doc.querySelector('.left-panel').classList.add('fixed');
         } else {
             doc.querySelector('.left-panel').classList.remove('fixed');
         }
     })
+
+    // doc.querySelector('main').addEventListener('scroll', function(e) {
+        // if (e.target.scrollTop >= 1057) {
+            animationSkills();
+        // }
+    // })
+
+
+    /**
+     * Auto animation on skill section
+     */
+
+    function animationSkills () {
+        var skillsLis = doc.querySelectorAll('#skills li'),
+            length = skillsLis.length,
+            i = 0;
+
+        // Random skills
+        // setInterval(function(){
+        //     var random = getRandomInt(0, skillsLis.length);
+        //     skillsLis[random].classList.add('animation');
+        //     setTimeout(function(){
+        //         skillsLis[random].classList.remove('animation');
+        //     },1000)
+        // }, 1000)
+        
+        // function getRandomInt(min, max) {
+        //     return Math.floor(Math.random() * (max - min + 1)) + min;
+        // }
+
+        setInterval(function() {
+            if (i < length) {
+                console.log(i)
+                if (skillsLis[i].classList.contains('animation')) {
+                    skillsLis[i].classList.remove('animation');
+                } else {
+                    skillsLis[i].classList.add('animation');
+                }
+                setTimeout(function(){
+                    console.log(i)
+                    //skillsLis[i].classList.remove('animation');
+                    //alert()
+                },1000)
+                i++;
+            } else {
+                i = 0;
+            }
+        }, 1000)
+    }
+
+
 
 })(window, window.document);

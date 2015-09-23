@@ -146,7 +146,8 @@ section {
 
     li {
     	background: rgba(102,102,102,0.8);
-    	border: solid 2px #fff;
+    	background-clip: padding-box;
+    	border: solid 10px rgba(256, 256, 256, 0.4);
     	border-radius: 50%;
     	display: inline-block;
     	margin: 0 3% 3% 0;
@@ -158,12 +159,21 @@ section {
     	position: relative;
 		min-width: 150px;
 		padding: 1%;
+		vertical-align: top;
+		transition: transform 0.5s ease-out;
 		
-		&:hover {
-    		background: rgba(256,256,256,0.5);
-    		border-color: rgba(102,102,102,1);
+		&:hover,
+		&.animation {
+    		background: rgba(256,256,256,0.4);
+    		background-clip: padding-box;
+    		border-color: rgba(102,102,102,0.4);
     		font-weight: bold;
-    		color: rgba(102,102,102,0.8);
+			transform: perspective( 200px ) rotateY( 180deg );
+
+			& span{
+				transform: translateY(-50%) rotateY(-180deg) perspective(600px);
+			}
+
 		}
 
 		&:before {
@@ -364,6 +374,16 @@ footer {
 			&:last-child {
 				margin-bottom: 0;
 			}
+		}
+	}
+
+	.contact li {
+		&:first-child {
+			left: 0;
+		}
+
+		&:last-child {
+			right: 15px;
 		}
 	}
 }
